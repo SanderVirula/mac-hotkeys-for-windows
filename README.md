@@ -47,6 +47,9 @@ A handy AutoHotkey script that makes Windows modifier keys and shortcuts behave 
 - `^!q::ExitApp`  
   > **Ctrl + Alt + Q** immediately exits the script.
 
+- `^!r::Reload`
+  > **Ctrl + Alt + R** reloads the script. Useful if you're tweaking it.
+
 - Standalone **Left Alt** and **Right Alt** are swallowed so they don’t open menus:
   ```ahk
   $LAlt::Return
@@ -152,9 +155,4 @@ RAlt Up::Send {RAlt Up}
     ; … hotkeys …
   #If
   ```
-- **Reload script**:  
-  ```ahk
-  ^!r::Reload   ; Ctrl+Alt+R
-  ```
-
 ---
