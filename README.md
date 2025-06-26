@@ -78,16 +78,15 @@ Mimics macOS ⌘ shortcuts using Left Alt (`LAlt`):
 
 ```ahk
 LAlt & v::
-    if WinActive("Explorer") 
-        SendInput ^v      ; Explorer: Ctrl+V (files)
+    if GetKeyState("Shift", "P")
+        SendInput, ^+v    ; plain-text paste
     else
-        SendInput ^+v     ; Everywhere else: Ctrl+Shift+V (plain text)
+        SendInput, ^v     ; regular paste (Explorer files)
 return
 ```
 
-- **Alt + V** →  
-  - _In Explorer_: `Ctrl + V` → Paste files/folders  
-  - _Elsewhere_: `Ctrl + Shift + V` → Plain-text paste
+- **Alt + V** → Regular paste
+- **Alt + V** → Plain-text paste
 
 ### New Window vs Incognito (Alt+N)
 
