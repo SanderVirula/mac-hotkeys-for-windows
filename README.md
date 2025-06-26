@@ -18,7 +18,6 @@ A handy AutoHotkey script that makes Windows modifier keys and shortcuts behave 
    - [Win-based Angle Brackets](#win-based-angle-brackets)  
    - [AltGr Pass-Through](#altgr-pass-through)  
 4. [Optional Tweaks](#optional-tweaks)  
-5. [License](#license)
 
 ---
 
@@ -159,7 +158,3 @@ RAlt Up::Send {RAlt Up}
   ```
 
 ---
-
-## License
-
-This script is released into the public domain. Use and modify freely!
